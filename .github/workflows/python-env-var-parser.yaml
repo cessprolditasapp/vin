@@ -36,9 +36,9 @@ jobs:
 
       - name: check environment variable status
         run: |
-          if [[ -z "${ENV_VAR}" ]]
+          if [[ -z $ENV_VAR ]]
           then
-            echo "Environmental variable is set via Python script and its value is ${ENV_VAR}"
+            echo "Environmental variable is set via Python script and its value is $ENV_VAR"
           else
             echo "Environmental variable is not set. Exiting..."
             exit 1
