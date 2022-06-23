@@ -1,6 +1,7 @@
 name: run_on_pr_to_master
 on:
-  push:
+  workflow_dispatch:
+  pull_request:
     branches:
       - master
     paths:

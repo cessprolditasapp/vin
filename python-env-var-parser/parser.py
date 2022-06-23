@@ -8,4 +8,4 @@ try:
     print(f"+++ Environment variable is set +++"")
 
 except Exception as e:
-    print(f"+++ Error in setting environment variable :: {e} +++")
+    print(f"+++ Error in setting the environment variable :: {e} +++")
