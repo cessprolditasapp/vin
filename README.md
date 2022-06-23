@@ -1,5 +1,5 @@
 # About
-This repository contains some useful tips and hacks around using [GitHub Actions](https://docs.github.com/en/actions)
+This repository contains some useful tips and hacks around using [GitHub Actions](https://docs.github.com/en/actions).
 
 ## Components
 
