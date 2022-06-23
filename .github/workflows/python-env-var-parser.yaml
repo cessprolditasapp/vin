@@ -36,7 +36,7 @@ jobs:
 
       - name: check environment variable status
         run: |
-          if [[ $ENV_VAR == 1 ]]
+          if [ $ENV_VAR == 1 ]
           then
             echo "Environmental variable is set via Python script and its value is $ENV_VAR"
           else
