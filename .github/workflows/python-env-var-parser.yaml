@@ -1,6 +1,7 @@
 name: run_on_pr_to_master
 on:
-  push:
+  workflow_dispatch:
+  pull_request:
     branches:
       - master
     paths:
@@ -35,9 +36,9 @@ jobs:
 
       - name: check environment variable status
         run: |
-          if [[ -z "${ENV_VAR}" ]]
+          if [ $ENV_VAR == 1 ]
           then
-            echo "Environmental variable is set via Python script and its value is ${ENV_VAR}"
+            echo "Environmental variable is set via Python script and its value is $ENV_VAR"
           else
             echo "Environmental variable is not set. Exiting..."
             exit 1
